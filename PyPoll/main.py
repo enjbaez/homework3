@@ -17,10 +17,10 @@ Pypoll_csv_percentage = (votes per candidate / total_votes) * 100)
 candidate.count("voter id")
 
 # The winner of the election based on popular vote.
-print.candidate(Pypoll_csv_percentage)
+print.(Pypoll_csv_percentage).max   
 
 # In addition, your final script should both print the analysis to the terminal and export a text file with the results.
-Pypoll_csv.to_excel(r'Path where you want to store the exported excel file\File Name.xlsx')
+Pypoll_csv.to_excel(r'C:\Users\ebaez\Desktop\homework3\PyPoll\PyPoll_Analyzed.xlsx')
 
 
 

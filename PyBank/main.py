@@ -16,10 +16,10 @@ Profit/Losses.sum
 # row 2 minus row1 for each record then mean
 
 # The greatest increase in profits (date and amount) over the entire period
-# when row 2 is subtracted from row 1. the greatest of those results
+# when row 2 is subtracted from row 1. the max of those results
 
 # The greatest decrease in losses (date and amount) over the entire period
-# when row 2 is subtracted from row 1. the least of those results
+# when row 2 is subtracted from row 1. the min of those results
 
 # In addition, your final script should both print the analysis to the terminal and export a text file with the results.
-PyBank_csv.to_excel(r'Path where you want to store the exported excel file\File Name.xlsx')
+PyBank_csv.to_excel(r'C:\Users\ebaez\Desktop\homework3\PyBank\PyBank_Analyzed.xlsx')
