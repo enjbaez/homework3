@@ -5,10 +5,8 @@ import csv
 def readFile(filename):
     #initialise results as empty dictionary which will contain only voterId and candidate name who recieved tha vote
     results = {}
-    #try catch block for handling file not found exception
-    try:
-        #open the file using file reader and name it as employees
-        with open(filename,'r') as file:
+    #open the file using file reader and name it as employees
+    with open(filename,'r') as file:
             #use csv reader to read data from the file seperated by ','
             csv_reader=csv.reader(file)
             #remove column names
@@ -17,10 +15,7 @@ def readFile(filename):
             for row in csv_reader:
                 #map voter id with candidate who recieved in dictionary
                 results[row[0]]= row[2] 
-    #if file not found then show error message
-    except OSError as e:
-        print("\nSorry, "+filename+" could not be found.\n")
-    #now return results
+    #return results
     return results
 
 #function to count votes for all candidates
