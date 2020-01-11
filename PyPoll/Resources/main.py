@@ -1,12 +1,13 @@
 #import csv module to read data from csv file
 import csv
+import os
 
 #function to read data from the file
 def readFile(filename):
-    #initialise results as empty dictionary which will contain only voterId and candidate name who recieved tha vote
+    #initialise results as empty dictionary which will contain only voterId and candidate name who recieved the vote
     results = {}
     #open the file using file reader and name it as employees
-    with open(filename,'r') as file:
+    with open(filename, 'r') as file:
             #use csv reader to read data from the file seperated by ','
             csv_reader=csv.reader(file)
             #remove column names
@@ -76,7 +77,9 @@ def main():
 if __name__=='__main__':
     main()
         
-    
+file = open('Results', 'w')
+file.write("Results")
+file.close()   
     
     
    
